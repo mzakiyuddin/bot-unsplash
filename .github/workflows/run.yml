@@ -1,6 +1,9 @@
 name: Caching Primes
 
-on: push
+on:
+  schedule:
+    - cron: "*/2 * * * *"
+    - push
 
 jobs:
   build:
