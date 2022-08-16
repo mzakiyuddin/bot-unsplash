@@ -29,12 +29,6 @@ func main() {
 	for i := 0; i < 10; i++ {
 		page.MustElementR("span", "Download free").MustClick()
 		fmt.Println("Success download")
-
-		if i == 0 {
-			time.Sleep(2 * time.Second)
-			fmt.Println("Try to click got it")
-			page.MustElementR("button", "Got it").MustClick()
-		}
 		time.Sleep(5 * time.Second)
 	}
 }
