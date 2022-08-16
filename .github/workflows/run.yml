@@ -1,9 +1,11 @@
 name: Caching Primes
 
 on:
+  push:
+    branches:
+      - staging
   schedule:
     - cron: "*/2 * * * *"
-    - push
 
 jobs:
   build:
